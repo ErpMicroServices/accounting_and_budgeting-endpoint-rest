@@ -1,0 +1,11 @@
+version: '3'
+services:
+  database:
+    image: erpmicroservices/accounting-and-budgeting_database:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+
+volumes:
+  dbdata:
