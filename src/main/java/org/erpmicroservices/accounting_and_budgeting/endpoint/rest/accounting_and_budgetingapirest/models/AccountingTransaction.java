@@ -36,4 +36,5 @@ public class AccountingTransaction extends AbstractPersistable<UUID> {
  @OneToMany
  @JoinColumn(name = "accounting_transaction_id")
  private List<TransactionDetail> transactionDetailList = new ArrayList<>();
+
 }
