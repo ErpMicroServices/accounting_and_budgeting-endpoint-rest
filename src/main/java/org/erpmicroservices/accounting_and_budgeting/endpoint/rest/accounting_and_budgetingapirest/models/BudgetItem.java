@@ -28,4 +28,7 @@ public class BudgetItem extends AbstractPersistable<UUID> {
  private List<BudgetItem> budgetItemList;
  @ManyToOne
  private BudgetItemType type;
+ @OneToMany
+ @JoinColumn(name = "budget_item_id")
+ private List<BudgetScenarioApplication> budgetScenarioApplicationList;
 }

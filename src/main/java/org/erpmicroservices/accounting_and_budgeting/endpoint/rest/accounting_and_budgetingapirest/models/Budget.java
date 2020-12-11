@@ -20,6 +20,10 @@ public class Budget extends AbstractPersistable<UUID> {
 
  @OneToMany
  @JoinColumn(name = "budget_id")
+ private List<BudgetItem> budgetItemList;
+
+ @OneToMany
+ @JoinColumn(name = "budget_id")
  private List<BudgetStatus> budgetStatusList;
 
  @OneToMany
@@ -36,4 +40,8 @@ public class Budget extends AbstractPersistable<UUID> {
  @OneToMany
  @JoinColumn(name = "budget_id")
  private List<BudgetReview> budgetReviewList;
+
+ @OneToMany
+ @JoinColumn(name = "budget_id")
+ private List<BudgetScenarioApplication> budgetScenarioApplicationList;
 }
