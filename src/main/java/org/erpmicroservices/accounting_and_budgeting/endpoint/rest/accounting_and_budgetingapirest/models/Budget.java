@@ -36,4 +36,8 @@ public class Budget extends AbstractPersistable<UUID> {
 
  @ManyToOne
  private StandardTimePeriod standardTimePeriod;
+
+ @OneToMany
+ @JoinColumn(name = "budget_id")
+ private List<BudgetRevision> budgetRevisionList;
 }
