@@ -9,7 +9,7 @@
     </parent>
     <groupId>org.erpmicroservices.accounting_and_budgeting.endpoint.rest</groupId>
     <artifactId>accounting_and_budgeting-api-rest</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>accounting_and_budgeting-api-rest</name>
     <description>Services for accounting and budgeting.</description>
 
@@ -19,7 +19,7 @@
         <developerConnection>scm:git:ssh://git@github.com/ErpMicroServices/accounting_and_budgeting-endpoint-rest.git
         </developerConnection>
         <url>scm:git:ssh://git@github.com/ErpMicroServices/accounting_and_budgeting-endpoint-rest.git</url>
-        <tag>accounting_and_budgeting-api-rest-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
