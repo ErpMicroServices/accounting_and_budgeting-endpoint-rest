@@ -27,4 +27,8 @@ public class GeneralLedgerAccount extends AbstractPersistable<UUID> {
  @OneToMany
  @JoinColumn(name = "general_ledger_account_id")
  private List<OrganizationGlAccount> organizationGLAccountList = new ArrayList<>();
+
+ @OneToMany
+ @JoinColumn(name = "general_ledger_account_id")
+ private List<GlBudgetXref> glBudgetXrefList;
 }

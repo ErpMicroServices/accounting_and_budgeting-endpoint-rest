@@ -40,4 +40,5 @@ public class BudgetItem extends AbstractPersistable<UUID> {
  @OneToMany
  @JoinColumn(name = "budget_item_id")
  private List<RequirementBudgetAllocation> requirementBudgetAllocationList;
+
 }
